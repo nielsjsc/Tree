@@ -42,6 +42,11 @@ the path_to and node_at functions, and iterates through every key, printing the 
 node, as well as the key, which is found through node at. After print_tree is finished, main calls 
 delete_tree, deleting the entire random tree, and deallocating all of the memory taken by it. 
 
+I made sure to include a global variable recursion_depth, which kept track of the height of the tree.
+If the depth reached 16, it returns, stopping the creation of nodes beyond 16 layers. this means a full
+tree, if probability is set to 100% or higher, will have ~81,000 nodes.
+
+
 BUILDING:
 
 with the g++ compiler, simply compile test_tree.cpp, which includes 
