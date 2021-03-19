@@ -14,6 +14,8 @@ it was a simple three line recursive function
 that went down the tree from the "root" and once it reached
 the "leaf", it destroys the leaf and returns up the call stack
 destroying each node.
+destroy_tree has been tested by valgrind to ensure it leaks no 
+memory
 
 path_to:
 for path_to i used two functions,
@@ -44,7 +46,8 @@ delete_tree, deleting the entire random tree, and deallocating all of the memory
 
 I made sure to include a global variable recursion_depth, which kept track of the height of the tree.
 If the depth reached 16, it returns, stopping the creation of nodes beyond 16 layers. this means a full
-tree, if probability is set to 100% or higher, will have ~81,000 nodes.
+tree, if probability is set to 100% or higher, will have ~ nodes. Making a full tree and watching
+it print in terminal is a fascinating way to see how it returns up the stack.
 
 
 BUILDING:
