@@ -1,6 +1,7 @@
 # Tree
  CS 221 Tree HW
 Niels Christoffersen
+tree.cpp:
 
 create_tree:
 for the create_tree function, 
@@ -30,9 +31,20 @@ depending on the current char of the string.
 it then returns the final pointer.
 if any errors occur in the string, it returns nullptr.
 
+
+test_tree.cpp:
+I designed the test_tree file to test all four functions of tree.cpp.
+first it creates a test tree with key=0. it then takes a user input int out of 100 to determine
+the probability of each node having a left/right child. It then runs the create_rand_tree function 
+on the test tree that was created. the random tree function uses the user probability to recursively
+create a random tree, then returns the root of the tree. It then calls print_tree, which tests both 
+the path_to and node_at functions, and iterates through every key, printing the path to the current 
+node, as well as the key, which is found through node at. After print_tree is finished, main calls 
+delete_tree, deleting the entire random tree, and deallocating all of the memory taken by it. 
+
 BUILDING:
 
-with the g++ compiler, simply compile Test_tree.cpp, which includes 
-tree.h and Tree.cpp. Then run it, it will take user input, 
+with the g++ compiler, simply compile test_tree.cpp, which includes 
+tree.h and tree.cpp. Then run the compiled file, it will take user input, 
 generate a random tree, and print every node's key and path_to
 to terminal for user observation. 
