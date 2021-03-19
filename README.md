@@ -45,8 +45,8 @@ node, as well as the key, which is found through node at. After print_tree is fi
 delete_tree, deleting the entire random tree, and deallocating all of the memory taken by it. 
 
 I made sure to include a global variable recursion_depth, which kept track of the height of the tree.
-If the depth reached 16, it returns, stopping the creation of nodes beyond 16 layers. this means a full
-tree, if probability is set to 100% or higher, will have ~ nodes. Making a full tree and watching
+If the depth reached 16, it returns, stopping the creation of nodes beyond a height of 16. this means a full
+tree, if probability is set to 100% or higher, will have 2^17 nodes, as the depth count starts at 0. Making a full tree and watching
 it print in terminal is a fascinating way to see how it returns up the stack.
 
 
