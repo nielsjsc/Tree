@@ -16,8 +16,6 @@ int main() {
     test_tree = create_rand_tree(test_tree); //creates a random tree based on the user probability
     print_tree(test_tree); //calls print tree function that prints to terminal
     destroy_tree(test_tree); //destroy the original test tree, which includes all of its children
-    std::cout << "destroyed tree's: key, value, left, right: " << test_tree->key_<<"<<"<< test_tree->value_<<"<<"<<test_tree->left_<<"<<"<<test_tree->right_;
-    //prints out the values of test tree after it has been destroyed, the key and value are set to apparently weird large ints, but their memory has been deallocated
     return 0;
 }
 
