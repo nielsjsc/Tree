@@ -33,6 +33,6 @@ if any errors occur in the string, it returns nullptr.
 BUILDING:
 
 with the g++ compiler, simply compile Test_tree.cpp, which includes 
-tree.h and Tree.cpp. then run it, it will take user input, 
-and generate a random tree every time, print every node's key and path_to
+tree.h and Tree.cpp. Then run it, it will take user input, 
+generate a random tree, and print every node's key and path_to
 to terminal for user observation. 
